@@ -38,11 +38,13 @@ void dijkstra(int s) {
           d[v] = d[u] + w;
           rescueNum[v] = rescueNum[u] + teamNum[v];
           pathNum[v] = pathNum[u];
+          printf("%d %d\n", pathNum[v], pathNum[u]);
         } else if (d[u] + w == d[v]) {
           if (rescueNum[u] + teamNum[v] > rescueNum[v]) {
             rescueNum[v] = rescueNum[u] + teamNum[v];
           }
           pathNum[v] += pathNum[u];
+          printf("%d %d\n", pathNum[v], pathNum[u]);
         }
       }
     }
@@ -59,7 +61,7 @@ int main() {
     cin >> teamNum[i];
   }
   fill(d, d + maxn, INF);
-  fill(pathNum, pathNum + maxn, 0);
+  // fill(pathNum, pathNum + maxn, 1);
   fill(rescueNum, rescueNum + maxn, 0);
   for (int i = 0; i < m; i++) {
     int u, v, w;
