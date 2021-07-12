@@ -80,7 +80,8 @@
     "queue": "cpp",
     "ratio": "cpp",
     "stack": "cpp",
-    "thread": "cpp"
+    "thread": "cpp",
+    "filesystem": "cpp"
   },
   "git.ignoreLimitWarning": true
 }
