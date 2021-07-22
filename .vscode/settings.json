@@ -81,7 +81,8 @@
     "ratio": "cpp",
     "stack": "cpp",
     "thread": "cpp",
-    "filesystem": "cpp"
+    "filesystem": "cpp",
+    "climits": "cpp"
   },
   "git.ignoreLimitWarning": true
 }
